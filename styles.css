@@ -1,0 +1,60 @@
+:root {
+    --clr-white-hsl: 0, 0%, 100%;
+    --clr-light-grey-hsl: 212, 45%, 89%;
+    --clr-greyish-blue-hsl: 220, 15%, 55%;
+    --clr-dark-blue-hsl: 218, 44%, 22%;
+    
+    --ff: 'Outfit', sans-serif;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    --fs-400: 15px;
+    --fs-700: 24px;
+}
+
+* {
+    font-family: var(--ff);
+    font-size: var(--font-size);
+    font-weight: var(--fw-regular);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(var(--clr-light-grey-hsl));
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 300px;
+    background-color: hsl(var(--clr-white-hsl));
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 5px 25px 0 hsl(var(--clr-greyish-blue-hsl), .2);
+}
+
+.text {
+    margin-top: 15px;
+}
+
+img {
+    border-radius: 15px;
+}
+
+h1 {
+    font-size: var(--fs-700);
+    font-weight: var(--fw-bold);
+    color: hsl(var(--clr-dark-blue-hsl));
+}
+
+h2 {
+    color: hsl(var(--clr-greyish-blue-hsl));
+    padding: 0 15px;
+}
